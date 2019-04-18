@@ -70,13 +70,13 @@ The main tasks for this exercise are as follows:
 1. From the Cloud Shell pane, run the following to create a resource group and store the JSON output in a variable (replace the `<Azure region>` placeholder with the name of the Azure region that is available in your subscription and which is closest to the lab location):
 
    ```
-   RG=$(az group create --name az3000301-LabRG --location <Azure region>)
+   $RG=(az group create --name az3000301-LabRG --location <Azure region>)
    ```
 
 1. From the Cloud Shell pane, run the following to create a service principal that will be used by Packer and store the JSON output in a variable:
 
    ```
-   AAD_SP=$(az ad sp create-for-rbac)
+   $AAD_SP=(az ad sp create-for-rbac)
    ```
 
 > **Result**: After you completed this exercise, you have downloaded HashiCorp Packer and configured its prerequisites.
